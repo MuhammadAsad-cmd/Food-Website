@@ -1,0 +1,517 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>FlavorFinesse.</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Optional theme -->
+
+
+
+</head>
+
+<body>
+    <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+
+    <div class="menu">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <ion-icon name="grid-outline"></ion-icon>
+            </label>
+            <a href="index.html">
+                <img src="images/food logo.png" alt="Food Logo" class="upper-img">
+            </a>
+
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER US</a></li>
+                <li><a href="catering.html">CATERING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+
+
+
+    <!-- Hero Section -->
+    <div class="section flex" id="hero-section">
+        <div class="text">
+            <h1 class="primary">
+                It's Not Just Food, <br />
+                It's an <span>Experience</span>
+            </h1>
+
+            <p class="tertiary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
+                provident dolorum. Voluptatum ducimus minima quasi unde, voluptatibus
+                soluta eligendi. Enim, architecto autem.
+            </p>
+
+            <a href="menu.html" class="explore">Explore Menu</a>
+        </div>
+        <div class="visual">
+            <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/home-banner.png" alt="" />
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- How It Works -->
+    <div class="section" id="how-it-works">
+        <h2 class="secondary">How It Works</h2>
+
+        <div class="container flex">
+            <div class="box">
+                <h3>Easy Order</h3>
+                <ion-icon name="timer-outline"></ion-icon>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                    non?
+                </p>
+            </div>
+
+            <div class="box active">
+                <h3>Best Quality</h3>
+                <ion-icon name="trophy-outline"></ion-icon>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                    non?
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Fast Delivery</h3>
+                <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+                    non?
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End How It Works -->
+
+
+
+    <!-- Product Section -->
+    <div class="product">
+        <h2>BEST SELLERS</h2>
+        <div class="product_container">
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="images/char.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>THE CHARCUTERIE COLLECTION</h3>
+                    <p>"Cure" their charcuterie obsession</p>
+                    <br><br><br>
+                    <a href="#">CHOOSE OPTIONS</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="images/bacon.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>SOFT PRETZEL PAIRING CLUB</h3>
+                    <p>The ultimate Philly pretzel experience, delivered monthly</p>
+                    <br><br>
+                    <a href="#">CHOOSE OPTIONS</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="images/hot.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>HOT SAUCE GIFT BOX</h3>
+                    <p>For the adventurous heat lover, this quintet packs a fiery, flavor-filled punch</p>
+                    <br><br><br>
+                    <a href="#">CHOOSE OPTIONS</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="images/cake.jpg">
+                </div>
+                <div class="item_content">
+                    <h3>APPETIZING CAKES</h3>
+                    <p>We deliver delicious cakes of a wide range of flavours which is nothing but the best of the rest
+                        desserts</p>
+                    <br><br><br>
+                    <a href="#">CHOOSE OPTIONS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Section -->
+
+    <!-- Menu Section -->
+
+    <section id="our_menu" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page_title text-center mb-4">
+                        <h1>our menu</h1>
+                        <div class="single_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="breakfast-tab" data-toggle="tab" href="#breakfast"
+                            role="tab">Breakfast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab">Lunch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dinner-tab" data-toggle="tab" href="#dinner" role="tab">Dinner</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="tab-content col-lg-12" id="myTabContent">
+                    <div class="tab-pane fade show active" id="breakfast" role="tabpanel"
+                        aria-labelledby="breakfast-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/Burger.jpg" alt="burger">
+                                    <div class="menu_content">
+                                        <h4>Chicken Burger <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Black Coffee.jpg" alt="black coffee">
+                                    <div class="menu_content">
+                                        <h4>Black coffee <span>$20</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Fried Rice.jpg" alt="fried rice">
+                                    <div class="menu_content">
+                                        <h4>Fried Rice <span>$45</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/meat.jpg" alt="meat">
+                                    <div class="menu_content">
+                                        <h4>meat <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/Burger.jpg" alt="burger">
+                                    <div class="menu_content">
+                                        <h4>Chicken Burger <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Black Coffee.jpg" alt="black coffee">
+                                    <div class="menu_content">
+                                        <h4>Black coffee <span>$20</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Fried Rice.jpg" alt="fried rice">
+                                    <div class="menu_content">
+                                        <h4>Fried Rice <span>$45</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/meat.jpg" alt="meat">
+                                    <div class="menu_content">
+                                        <h4>meat <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/pizza.jpg" alt="pizza">
+                                    <div class="menu_content">
+                                        <h4>12" Pizza <span>$35</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/salad.jpg" alt="salad">
+                                    <div class="menu_content">
+                                        <h4>Salad <span>$20</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Green tea.jpg" alt="green tea">
+                                    <div class="menu_content">
+                                        <h4>green tea <span>$15</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/meat.jpg" alt="meat">
+                                    <div class="menu_content">
+                                        <h4>meat <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/Burger.jpg" alt="burger">
+                                    <div class="menu_content">
+                                        <h4>Chicken Burger <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Black Coffee.jpg" alt="black coffee">
+                                    <div class="menu_content">
+                                        <h4>Black coffee <span>$20</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Fried Rice.jpg" alt="fried rice">
+                                    <div class="menu_content">
+                                        <h4>Fried Rice <span>$45</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/meat.jpg" alt="meat">
+                                    <div class="menu_content">
+                                        <h4>meat <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/Burger.jpg" alt="burger">
+                                    <div class="menu_content">
+                                        <h4>Chicken Burger <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Black Coffee.jpg" alt="black coffee">
+                                    <div class="menu_content">
+                                        <h4>Black coffee <span>$20</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Fried Rice.jpg" alt="fried rice">
+                                    <div class="menu_content">
+                                        <h4>Fried Rice <span>$45</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/meat.jpg" alt="meat">
+                                    <div class="menu_content">
+                                        <h4>meat <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/Burger.jpg" alt="burger">
+                                    <div class="menu_content">
+                                        <h4>Chicken Burger <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Black Coffee.jpg" alt="black coffee">
+                                    <div class="menu_content">
+                                        <h4>Black coffee <span>$20</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/Fried Rice.jpg" alt="fried rice">
+                                    <div class="menu_content">
+                                        <h4>Fried Rice <span>$45</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/meat.jpg" alt="meat">
+                                    <div class="menu_content">
+                                        <h4>meat <span>$24</span></h4>
+                                        <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta
+                                            saepe facilis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="order.html" class=" menu_btn btn btn-danger">ORDER NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Of Menu Section -->
+
+
+
+    <!-- --------------------------------------------TEAM--------------------------------------------------------->
+    <div class="team">
+        <h2>Our Team</h2>
+        <div class="team_container">
+            <div class="team_video">
+                <video controls>
+                    <source src="images/Restaurant food cinematic video advertisement.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="team_content">
+                <p>We provide extraordinary food experiences, inspired by our legacy. Also, we just really love cheese.
+                </p>
+                <br>
+                <p>We are a pioneering specialty food retailer and importer that began with a modest shop in the
+                    now-iconic North Philadelphia Italian Market in 1989; today, we employ more than 350 proud team
+                    members and have evolved into a community-driven enterprise with our five retail locations,
+                    catering, import and e-commerce divisions.</p>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------FEED--------------------------------------------------------->
+    <div class="feed">
+        <h2>WRITE A REVIEW</h2>
+        <div class="feed_form" method="post">
+            <form name="submit-googlesheet">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="text" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <div class="footer">
+        <div class="txt">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Cumque</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+
+        </div>
+        <div class="txt">
+            <h2>About US</h2>
+            <p>Product</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+
+        </div>
+        <div class="txt">
+            <h2>About US</h2>
+            <p>Near</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+
+        </div>
+        <div class="txt">
+            <h2>About US</h2>
+            <p>Websites</p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Foods</p>
+
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmY7HJmUEupsd8UBLj-aTxEsPcKQEWFYaxFA44IcIYrYCjanY1WcTF4zyKYXFQubtbTA/exec'
+        const form = document.forms['submit-googlesheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks you for your valuable feedback!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>

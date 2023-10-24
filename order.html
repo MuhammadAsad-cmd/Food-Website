@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+</head>
+
+<body>
+
+    <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+
+
+    <div class="menu">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <ion-icon name="grid-outline"></ion-icon>
+            </label>
+
+            <a href="index.html">
+                <img src="images/food logo.png" alt="Food Logo" class="upper-img">
+            </a>
+
+            <ul>
+                <li><a href="about.html" >ABOUT US</a></li>
+                <li><a href="menu.html" >MENU</a></li>
+                <li><a href="order.html" >ORDER US</a></li>
+                <li><a href="catering.html" >CATERING</a></li>
+                <li><a href="contact.html" >CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="images/Logo Rest.png" alt="Restaurant Logo" class="logo-img">
+        </div>
+        <div>
+            <h2 class="animate__animated animate__fadeIn">Menu</h2>
+            <div class="menu-item animate__animated animate__fadeIn">
+                <span>
+                    Burger</span>
+                <input type="number" id="burger-quantity" value="0">
+                <ion-icon name="add-circle-outline" onclick="incrementQuantity('burger-quantity')"></ion-icon>
+                <ion-icon name="remove-circle-outline" onclick="decrementQuantity('burger-quantity')"></ion-icon>
+                <button class="btn btn-primary btn-custom" onclick="calculateTotal()">Add to Order</button>
+            </div>
+            <div class="menu-item animate__animated animate__fadeIn">
+                <span> Pizza</span>
+                <input type="number" id="pizza-quantity" value="0">
+                <ion-icon name="add-circle-outline" onclick="incrementQuantity('pizza-quantity')"></ion-icon>
+                <ion-icon name="remove-circle-outline" onclick="decrementQuantity('pizza-quantity')"></ion-icon>
+                <button class="btn btn-primary btn-custom" onclick="calculateTotal()">Add to Order</button>
+            </div>
+            <div class="menu-item animate__animated animate__fadeIn">
+                <span> Salad</span>
+                <input type="number" id="salad-quantity" value="0">
+                <ion-icon name="add-circle-outline" onclick="incrementQuantity('salad-quantity')"></ion-icon>
+                <ion-icon name="remove-circle-outline" onclick="decrementQuantity('salad-quantity')"></ion-icon>
+                <button class="btn btn-primary btn-custom" onclick="calculateTotal()">Add to Order</button>
+            </div>
+            <div class="menu-item animate__animated animate__fadeIn">
+                <span>Coffee</span>
+                <input type="number" id="coffee-quantity" value="0">
+                <ion-icon name="add-circle-outline" onclick="incrementQuantity('coffee-quantity')"></ion-icon>
+                <ion-icon name="remove-circle-outline" onclick="decrementQuantity('coffee-quantity')"></ion-icon>
+
+                <button class="btn btn-primary btn-custom" onclick="calculateTotal()">Add to Order</button>
+            </div>
+        </div>
+        <div>
+            <h2 class="animate__animated animate__fadeIn">Order</h2>
+            <div id="order-items" class="order-items animate__animated animate__fadeIn">
+                <!-- Order items will be dynamically added here -->
+            </div>
+            <div class="total-price animate__animated animate__fadeIn">Total: $<span id="total-price">0</span></div>
+            <div class="mt-4">
+                <input type="text" id="customer-name" placeholder="Customer Name" class="form-control">
+            </div>
+            <div class="mt-4">
+                <label for="payment-options">Payment Options:</label>
+                <select id="payment-options" class="form-control">
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                    <option value="tap">Tap</option>
+                </select>
+            </div>
+            <div class="mt-4">
+                <label for="dine-options">Dine Options:</label>
+                <div id="dine-options" class="form-check">
+                    <input type="radio" id="dine-in" name="dine-option" value="dine-in" class="form-check-input">
+                    <label for="dine-in" class="form-check-label">Dine In</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="dine-out" name="dine-option" value="dine-out" class="form-check-input">
+                    <label for="dine-out" class="form-check-label">Dine Out</label>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-custom mt-4" onclick="printBill()">Print Bill</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

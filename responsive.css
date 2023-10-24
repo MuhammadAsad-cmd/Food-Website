@@ -1,0 +1,152 @@
+
+/* Add a media query for tablets */
+@media (max-width: 768px) {
+    .slide_con .slide_content h2 {
+      font-size: 200%;
+    }
+    
+  }
+  
+  /* Add a media query for mobile devices */
+  @media (max-width: 576px) {
+    .slide .slide_container .item .item_img img {
+      height: auto;
+    }
+    .slide_con .slide_content h2 {
+      font-size: 150%;
+    }
+    
+  }
+  
+ 
+  
+  /* Media queries for the product section */
+  @media (max-width: 768px) {
+    .product .product_container {
+      flex-direction: column;
+    }
+    .product .product_container .item {
+      width: 100%;
+    }
+    .product .product_container .item .item_img {
+      width: 100%;
+    }
+    .product .product_container .item .item_content {
+      text-align: center;
+    }
+    .product .product_container .item .item_content a {
+      margin: 5% 0;
+    }
+  }
+  
+  /* /* Media queries for the keypoint section  */
+  @media (max-width: 768px) {
+    .keypoint .key_container {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    .keypoint .key_container .key_img,
+    .keypoint .key_container .key_content {
+      width: 100%;
+    }
+  }
+  
+  /* Media queries for the team section */
+  @media (max-width: 768px) {
+    .team .team_container {
+      flex-direction: column;
+    }
+    .team .team_container .team_video,
+    .team .team_container .team_content {
+      width: 100%;
+    margin: auto;
+      color: black;
+    }
+
+  }
+  
+  /* Media queries for the feed section */
+  @media (max-width: 768px) {
+    .feed .feed_form form input,
+    .feed .feed_form form textarea,
+    .feed .feed_form form button {
+      width: 100%;
+    }
+    .contact_container .g_map {
+      border: 6px solid rgb(92, 0, 47);
+      width: 300px;
+      margin-right: 20px;
+      padding: 0;
+    }
+  }
+  
+
+
+
+ 
+
+
+
+
+
+@media (max-width: 858px) {
+
+
+  #hero-section .text {
+    margin-left: auto;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .visual,
+  .text {
+    width: 70%;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+ 
+  .visual img {
+    margin: 0 auto;
+  }
+  .upper-img{
+    width: 220px;
+    margin-top: 16px;  
+  }
+
+
+
+  .primary {
+    font-size: 56px;
+  }
+
+  
+  .tertiary {
+    font-size: 20px;
+  }
+
+
+ 
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .text,
+  .visual {
+    width: 90%;
+  }
+
+  .primary {
+    font-size: 48px;
+  }
+
+  .tertiary {
+    font-size: 17px;
+  }
+}
+/* End Responsive  */
